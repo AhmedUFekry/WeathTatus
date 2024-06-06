@@ -1,0 +1,705 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C8E3E8CD2BF7E33C000C2C8D /* WeathTatusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E3E8CC2BF7E33C000C2C8D /* WeathTatusApp.swift */; };
+		C8E3E8CF2BF7E33C000C2C8D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E3E8CE2BF7E33C000C2C8D /* ContentView.swift */; };
+		C8E3E8D12BF7E33E000C2C8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8E3E8D02BF7E33E000C2C8D /* Assets.xcassets */; };
+		C8E3E8D42BF7E33E000C2C8D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8E3E8D32BF7E33E000C2C8D /* Preview Assets.xcassets */; };
+		C8E3E8DE2BF7E33E000C2C8D /* WeathTatusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E3E8DD2BF7E33E000C2C8D /* WeathTatusTests.swift */; };
+		C8E3E8E82BF7E33E000C2C8D /* WeathTatusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E3E8E72BF7E33E000C2C8D /* WeathTatusUITests.swift */; };
+		C8E3E8EA2BF7E33E000C2C8D /* WeathTatusUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E3E8E92BF7E33E000C2C8D /* WeathTatusUITestsLaunchTests.swift */; };
+		C8E3E8F72BF7EBCF000C2C8D /* CurrentLocationSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E3E8F62BF7EBCF000C2C8D /* CurrentLocationSection.swift */; };
+		C8E3E8F92BF7F160000C2C8D /* DayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E3E8F82BF7F160000C2C8D /* DayCell.swift */; };
+		C8E3E8FB2BF7F7E9000C2C8D /* WeatherDetalsSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E3E8FA2BF7F7E9000C2C8D /* WeatherDetalsSection.swift */; };
+		C8E3E9062BF829FF000C2C8D /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E3E8FD2BF829F7000C2C8D /* Forecast.swift */; };
+		C8E3E9072BF829FF000C2C8D /* Forecastday.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E3E8FE2BF829F8000C2C8D /* Forecastday.swift */; };
+		C8E3E9082BF829FF000C2C8D /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E3E8FF2BF829F9000C2C8D /* Response.swift */; };
+		C8E3E9092BF829FF000C2C8D /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E3E9002BF829FA000C2C8D /* Location.swift */; };
+		C8E3E90A2BF829FF000C2C8D /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E3E9012BF829FB000C2C8D /* Day.swift */; };
+		C8E3E90B2BF829FF000C2C8D /* Astro.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E3E9022BF829FB000C2C8D /* Astro.swift */; };
+		C8E3E90C2BF829FF000C2C8D /* Condition.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E3E9032BF829FD000C2C8D /* Condition.swift */; };
+		C8E3E90D2BF829FF000C2C8D /* Hour.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E3E9042BF829FD000C2C8D /* Hour.swift */; };
+		C8E3E90E2BF829FF000C2C8D /* Current.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E3E9052BF829FE000C2C8D /* Current.swift */; };
+		C8E3E9112BF82A8F000C2C8D /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E3E9102BF82A8F000C2C8D /* NetworkService.swift */; };
+		C8E3E9132BF836EE000C2C8D /* DoubleExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E3E9122BF836EE000C2C8D /* DoubleExtention.swift */; };
+		C8E3E9162BF84AAA000C2C8D /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = C8E3E9152BF84AAA000C2C8D /* Kingfisher */; };
+		C8E3E9182BF85304000C2C8D /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E3E9172BF85304000C2C8D /* LocationManager.swift */; };
+		C8E3E91A2BF86160000C2C8D /* HourlyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E3E9192BF86160000C2C8D /* HourlyCell.swift */; };
+		C8E3E91C2BF865A0000C2C8D /* HoursList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E3E91B2BF865A0000C2C8D /* HoursList.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C8E3E8DA2BF7E33E000C2C8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C8E3E8C12BF7E33C000C2C8D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C8E3E8C82BF7E33C000C2C8D;
+			remoteInfo = WeathTatus;
+		};
+		C8E3E8E42BF7E33E000C2C8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C8E3E8C12BF7E33C000C2C8D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C8E3E8C82BF7E33C000C2C8D;
+			remoteInfo = WeathTatus;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C8C016812C019E12001E1F75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		C8E3E8C92BF7E33C000C2C8D /* WeathTatus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeathTatus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8E3E8CC2BF7E33C000C2C8D /* WeathTatusApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeathTatusApp.swift; sourceTree = "<group>"; };
+		C8E3E8CE2BF7E33C000C2C8D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C8E3E8D02BF7E33E000C2C8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C8E3E8D32BF7E33E000C2C8D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C8E3E8D92BF7E33E000C2C8D /* WeathTatusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeathTatusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8E3E8DD2BF7E33E000C2C8D /* WeathTatusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeathTatusTests.swift; sourceTree = "<group>"; };
+		C8E3E8E32BF7E33E000C2C8D /* WeathTatusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeathTatusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8E3E8E72BF7E33E000C2C8D /* WeathTatusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeathTatusUITests.swift; sourceTree = "<group>"; };
+		C8E3E8E92BF7E33E000C2C8D /* WeathTatusUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeathTatusUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C8E3E8F62BF7EBCF000C2C8D /* CurrentLocationSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentLocationSection.swift; sourceTree = "<group>"; };
+		C8E3E8F82BF7F160000C2C8D /* DayCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayCell.swift; sourceTree = "<group>"; };
+		C8E3E8FA2BF7F7E9000C2C8D /* WeatherDetalsSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDetalsSection.swift; sourceTree = "<group>"; };
+		C8E3E8FD2BF829F7000C2C8D /* Forecast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
+		C8E3E8FE2BF829F8000C2C8D /* Forecastday.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Forecastday.swift; sourceTree = "<group>"; };
+		C8E3E8FF2BF829F9000C2C8D /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		C8E3E9002BF829FA000C2C8D /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		C8E3E9012BF829FB000C2C8D /* Day.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
+		C8E3E9022BF829FB000C2C8D /* Astro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Astro.swift; sourceTree = "<group>"; };
+		C8E3E9032BF829FD000C2C8D /* Condition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Condition.swift; sourceTree = "<group>"; };
+		C8E3E9042BF829FD000C2C8D /* Hour.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hour.swift; sourceTree = "<group>"; };
+		C8E3E9052BF829FE000C2C8D /* Current.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Current.swift; sourceTree = "<group>"; };
+		C8E3E9102BF82A8F000C2C8D /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		C8E3E9122BF836EE000C2C8D /* DoubleExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoubleExtention.swift; sourceTree = "<group>"; };
+		C8E3E9172BF85304000C2C8D /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		C8E3E9192BF86160000C2C8D /* HourlyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyCell.swift; sourceTree = "<group>"; };
+		C8E3E91B2BF865A0000C2C8D /* HoursList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoursList.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C8E3E8C62BF7E33C000C2C8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8E3E9162BF84AAA000C2C8D /* Kingfisher in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8E3E8D62BF7E33E000C2C8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8E3E8E02BF7E33E000C2C8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C8E3E8C02BF7E33C000C2C8D = {
+			isa = PBXGroup;
+			children = (
+				C8E3E8CB2BF7E33C000C2C8D /* WeathTatus */,
+				C8E3E8DC2BF7E33E000C2C8D /* WeathTatusTests */,
+				C8E3E8E62BF7E33E000C2C8D /* WeathTatusUITests */,
+				C8E3E8CA2BF7E33C000C2C8D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C8E3E8CA2BF7E33C000C2C8D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C8E3E8C92BF7E33C000C2C8D /* WeathTatus.app */,
+				C8E3E8D92BF7E33E000C2C8D /* WeathTatusTests.xctest */,
+				C8E3E8E32BF7E33E000C2C8D /* WeathTatusUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C8E3E8CB2BF7E33C000C2C8D /* WeathTatus */ = {
+			isa = PBXGroup;
+			children = (
+				C8C016812C019E12001E1F75 /* Info.plist */,
+				C8E3E90F2BF82A3F000C2C8D /* Service */,
+				C8E3E8FC2BF829DD000C2C8D /* DataModels */,
+				C8E3E8CC2BF7E33C000C2C8D /* WeathTatusApp.swift */,
+				C8E3E8CE2BF7E33C000C2C8D /* ContentView.swift */,
+				C8E3E8D02BF7E33E000C2C8D /* Assets.xcassets */,
+				C8E3E8D22BF7E33E000C2C8D /* Preview Content */,
+				C8E3E8F62BF7EBCF000C2C8D /* CurrentLocationSection.swift */,
+				C8E3E8F82BF7F160000C2C8D /* DayCell.swift */,
+				C8E3E8FA2BF7F7E9000C2C8D /* WeatherDetalsSection.swift */,
+				C8E3E9122BF836EE000C2C8D /* DoubleExtention.swift */,
+				C8E3E9192BF86160000C2C8D /* HourlyCell.swift */,
+				C8E3E91B2BF865A0000C2C8D /* HoursList.swift */,
+			);
+			path = WeathTatus;
+			sourceTree = "<group>";
+		};
+		C8E3E8D22BF7E33E000C2C8D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C8E3E8D32BF7E33E000C2C8D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C8E3E8DC2BF7E33E000C2C8D /* WeathTatusTests */ = {
+			isa = PBXGroup;
+			children = (
+				C8E3E8DD2BF7E33E000C2C8D /* WeathTatusTests.swift */,
+			);
+			path = WeathTatusTests;
+			sourceTree = "<group>";
+		};
+		C8E3E8E62BF7E33E000C2C8D /* WeathTatusUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C8E3E8E72BF7E33E000C2C8D /* WeathTatusUITests.swift */,
+				C8E3E8E92BF7E33E000C2C8D /* WeathTatusUITestsLaunchTests.swift */,
+			);
+			path = WeathTatusUITests;
+			sourceTree = "<group>";
+		};
+		C8E3E8FC2BF829DD000C2C8D /* DataModels */ = {
+			isa = PBXGroup;
+			children = (
+				C8E3E9022BF829FB000C2C8D /* Astro.swift */,
+				C8E3E9032BF829FD000C2C8D /* Condition.swift */,
+				C8E3E9052BF829FE000C2C8D /* Current.swift */,
+				C8E3E9012BF829FB000C2C8D /* Day.swift */,
+				C8E3E8FD2BF829F7000C2C8D /* Forecast.swift */,
+				C8E3E8FE2BF829F8000C2C8D /* Forecastday.swift */,
+				C8E3E9042BF829FD000C2C8D /* Hour.swift */,
+				C8E3E8FF2BF829F9000C2C8D /* Response.swift */,
+				C8E3E9002BF829FA000C2C8D /* Location.swift */,
+			);
+			path = DataModels;
+			sourceTree = "<group>";
+		};
+		C8E3E90F2BF82A3F000C2C8D /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				C8E3E9102BF82A8F000C2C8D /* NetworkService.swift */,
+				C8E3E9172BF85304000C2C8D /* LocationManager.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C8E3E8C82BF7E33C000C2C8D /* WeathTatus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C8E3E8ED2BF7E33E000C2C8D /* Build configuration list for PBXNativeTarget "WeathTatus" */;
+			buildPhases = (
+				C8E3E8C52BF7E33C000C2C8D /* Sources */,
+				C8E3E8C62BF7E33C000C2C8D /* Frameworks */,
+				C8E3E8C72BF7E33C000C2C8D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WeathTatus;
+			packageProductDependencies = (
+				C8E3E9152BF84AAA000C2C8D /* Kingfisher */,
+			);
+			productName = WeathTatus;
+			productReference = C8E3E8C92BF7E33C000C2C8D /* WeathTatus.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C8E3E8D82BF7E33E000C2C8D /* WeathTatusTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C8E3E8F02BF7E33E000C2C8D /* Build configuration list for PBXNativeTarget "WeathTatusTests" */;
+			buildPhases = (
+				C8E3E8D52BF7E33E000C2C8D /* Sources */,
+				C8E3E8D62BF7E33E000C2C8D /* Frameworks */,
+				C8E3E8D72BF7E33E000C2C8D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C8E3E8DB2BF7E33E000C2C8D /* PBXTargetDependency */,
+			);
+			name = WeathTatusTests;
+			productName = WeathTatusTests;
+			productReference = C8E3E8D92BF7E33E000C2C8D /* WeathTatusTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C8E3E8E22BF7E33E000C2C8D /* WeathTatusUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C8E3E8F32BF7E33E000C2C8D /* Build configuration list for PBXNativeTarget "WeathTatusUITests" */;
+			buildPhases = (
+				C8E3E8DF2BF7E33E000C2C8D /* Sources */,
+				C8E3E8E02BF7E33E000C2C8D /* Frameworks */,
+				C8E3E8E12BF7E33E000C2C8D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C8E3E8E52BF7E33E000C2C8D /* PBXTargetDependency */,
+			);
+			name = WeathTatusUITests;
+			productName = WeathTatusUITests;
+			productReference = C8E3E8E32BF7E33E000C2C8D /* WeathTatusUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C8E3E8C12BF7E33C000C2C8D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					C8E3E8C82BF7E33C000C2C8D = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					C8E3E8D82BF7E33E000C2C8D = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = C8E3E8C82BF7E33C000C2C8D;
+					};
+					C8E3E8E22BF7E33E000C2C8D = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = C8E3E8C82BF7E33C000C2C8D;
+					};
+				};
+			};
+			buildConfigurationList = C8E3E8C42BF7E33C000C2C8D /* Build configuration list for PBXProject "WeathTatus" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C8E3E8C02BF7E33C000C2C8D;
+			packageReferences = (
+				C8E3E9142BF84AAA000C2C8D /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
+			productRefGroup = C8E3E8CA2BF7E33C000C2C8D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C8E3E8C82BF7E33C000C2C8D /* WeathTatus */,
+				C8E3E8D82BF7E33E000C2C8D /* WeathTatusTests */,
+				C8E3E8E22BF7E33E000C2C8D /* WeathTatusUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C8E3E8C72BF7E33C000C2C8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8E3E8D42BF7E33E000C2C8D /* Preview Assets.xcassets in Resources */,
+				C8E3E8D12BF7E33E000C2C8D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8E3E8D72BF7E33E000C2C8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8E3E8E12BF7E33E000C2C8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C8E3E8C52BF7E33C000C2C8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8E3E8FB2BF7F7E9000C2C8D /* WeatherDetalsSection.swift in Sources */,
+				C8E3E9182BF85304000C2C8D /* LocationManager.swift in Sources */,
+				C8E3E90C2BF829FF000C2C8D /* Condition.swift in Sources */,
+				C8E3E8CF2BF7E33C000C2C8D /* ContentView.swift in Sources */,
+				C8E3E8F72BF7EBCF000C2C8D /* CurrentLocationSection.swift in Sources */,
+				C8E3E8F92BF7F160000C2C8D /* DayCell.swift in Sources */,
+				C8E3E91A2BF86160000C2C8D /* HourlyCell.swift in Sources */,
+				C8E3E9092BF829FF000C2C8D /* Location.swift in Sources */,
+				C8E3E9062BF829FF000C2C8D /* Forecast.swift in Sources */,
+				C8E3E9082BF829FF000C2C8D /* Response.swift in Sources */,
+				C8E3E90B2BF829FF000C2C8D /* Astro.swift in Sources */,
+				C8E3E9132BF836EE000C2C8D /* DoubleExtention.swift in Sources */,
+				C8E3E9072BF829FF000C2C8D /* Forecastday.swift in Sources */,
+				C8E3E9112BF82A8F000C2C8D /* NetworkService.swift in Sources */,
+				C8E3E91C2BF865A0000C2C8D /* HoursList.swift in Sources */,
+				C8E3E90A2BF829FF000C2C8D /* Day.swift in Sources */,
+				C8E3E90D2BF829FF000C2C8D /* Hour.swift in Sources */,
+				C8E3E8CD2BF7E33C000C2C8D /* WeathTatusApp.swift in Sources */,
+				C8E3E90E2BF829FF000C2C8D /* Current.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8E3E8D52BF7E33E000C2C8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8E3E8DE2BF7E33E000C2C8D /* WeathTatusTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8E3E8DF2BF7E33E000C2C8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8E3E8EA2BF7E33E000C2C8D /* WeathTatusUITestsLaunchTests.swift in Sources */,
+				C8E3E8E82BF7E33E000C2C8D /* WeathTatusUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C8E3E8DB2BF7E33E000C2C8D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C8E3E8C82BF7E33C000C2C8D /* WeathTatus */;
+			targetProxy = C8E3E8DA2BF7E33E000C2C8D /* PBXContainerItemProxy */;
+		};
+		C8E3E8E52BF7E33E000C2C8D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C8E3E8C82BF7E33C000C2C8D /* WeathTatus */;
+			targetProxy = C8E3E8E42BF7E33E000C2C8D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C8E3E8EB2BF7E33E000C2C8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C8E3E8EC2BF7E33E000C2C8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C8E3E8EE2BF7E33E000C2C8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WeathTatus/Preview Content\"";
+				DEVELOPMENT_TEAM = MWZJ3A6CNJ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WeathTatus/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = location;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ahmedfekry.WeathTatus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C8E3E8EF2BF7E33E000C2C8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WeathTatus/Preview Content\"";
+				DEVELOPMENT_TEAM = MWZJ3A6CNJ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WeathTatus/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = location;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ahmedfekry.WeathTatus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C8E3E8F12BF7E33E000C2C8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MWZJ3A6CNJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ahmedfekry.WeathTatusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WeathTatus.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WeathTatus";
+			};
+			name = Debug;
+		};
+		C8E3E8F22BF7E33E000C2C8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MWZJ3A6CNJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ahmedfekry.WeathTatusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WeathTatus.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WeathTatus";
+			};
+			name = Release;
+		};
+		C8E3E8F42BF7E33E000C2C8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MWZJ3A6CNJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ahmedfekry.WeathTatusUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WeathTatus;
+			};
+			name = Debug;
+		};
+		C8E3E8F52BF7E33E000C2C8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MWZJ3A6CNJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ahmedfekry.WeathTatusUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WeathTatus;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C8E3E8C42BF7E33C000C2C8D /* Build configuration list for PBXProject "WeathTatus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8E3E8EB2BF7E33E000C2C8D /* Debug */,
+				C8E3E8EC2BF7E33E000C2C8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C8E3E8ED2BF7E33E000C2C8D /* Build configuration list for PBXNativeTarget "WeathTatus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8E3E8EE2BF7E33E000C2C8D /* Debug */,
+				C8E3E8EF2BF7E33E000C2C8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C8E3E8F02BF7E33E000C2C8D /* Build configuration list for PBXNativeTarget "WeathTatusTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8E3E8F12BF7E33E000C2C8D /* Debug */,
+				C8E3E8F22BF7E33E000C2C8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C8E3E8F32BF7E33E000C2C8D /* Build configuration list for PBXNativeTarget "WeathTatusUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C8E3E8F42BF7E33E000C2C8D /* Debug */,
+				C8E3E8F52BF7E33E000C2C8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C8E3E9142BF84AAA000C2C8D /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C8E3E9152BF84AAA000C2C8D /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C8E3E9142BF84AAA000C2C8D /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = C8E3E8C12BF7E33C000C2C8D /* Project object */;
+}
